@@ -1,0 +1,17 @@
+<script>
+  window.injected = () => {
+      document.querySelector('output').innerText = '✅ The function has run'
+  };
+  window.setInterval(() => {
+    window.injected()
+  }, 100);
+</script>
+<h1>Demo for a problem with wxt injected main world scripts</h1>
+<p>This page create a function in
+  <code>window.injected</code>
+  which is run in an interval. It simply writes to the element below to indicate that it has run.</p>
+<p>When wxt injects a page script called "injected", this interferes with the function run. You should also see an error in the
+developer console.</p>
+<output>
+  ❌ The function has not yet run
+</output>

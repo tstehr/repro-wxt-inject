@@ -1,0 +1,11 @@
+{
+  "name": "repro-wxt-inject",
+  "version": "1.0.0",
+  "description": "Demo for a problem with wxt injected main world scripts",
+  "scripts": {
+    "repro": "serve public"
+  },
+  "dependencies": {
+    "serve": "^14.2.4"
+  }
+}
